@@ -1,0 +1,17 @@
+<div class="social-box">
+  <div class="container repo-container">
+    <div class="row" *ngFor="let repo of repos">
+      <div class="col-lg-4 col-xs-12 text-center">
+        <div class="box box-repo">
+          <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+          <div class="box-title" ng-if="repos">
+            <h3>{{ repo.id }}</h3>
+          </div>
+          <div class="box-text">
+            <span>{{ repo.name }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
